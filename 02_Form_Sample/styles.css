@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+:root {
+ --color-white: #f3f3f3;
+ --color-darkblue: #1b1b32;
+ --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+ --color-green: #37af65;
+}
+
+html {
+   color: var(--color-white);
+   font-size: 17px;
+ }
+
+.survey-form {
+   background: var(--color-darkblue-alpha);
+   padding: 2.5rem 0.625rem;
+   border-radius: 0.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before {
+   content: '';
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   background: var(--color-darkblue);
+   background-color: var(--color-darkblue);
+   background-image: linear-gradient(
+       115deg,
+       rgba(58, 58, 158, 0.8),
+       rgba(136, 136, 206, 0.7)
+     ),
+     url(https://edsurge.imgix.net/uploads/post/image/12176/coding-1556754232.jpg?auto=compress%2Cformat&w=640&h=260&fit=crop);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.4;
+   color: var(--color-white);
+   margin: 0;
+}
+
+.text-center {
+   text-align: center;
+}
+
+ #title {
+   font-family: 'Sora', sans-serif;
+   text-shadow: 2px 2px 5px var( --color-darkblue);
+   font-size: 1.5rem;
+ }
+ #description {
+   font-style: italic;
+   font-family: 'Sora', sans-serif;
+   font-size: 1rem;
+   text-shadow: 2px 2px 5px var(--color-darkblue-alpha);
+ }
+
+ .container {
+   width: 100%;
+   margin: 3.125rem auto 0 auto;
+ }
+
+ @media (min-width: 576px) {
+   .container {
+     max-width: 540px;
+   }
+ }
+
+label {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.5rem;
+}
+
+ @media (min-width: 768px) {
+   .container {
+     max-width: 720px;
+   }
+ }
+
+ .form-group {
+   margin: 0 auto 1.25rem auto;
+   padding: 0.5rem;
+ }
+
+.form-control {
+   display: block;
+   width: 100%;
+   height: 2rem;
+   color: #495057;
+   background-color: #fff;
+   border: 1px solid #ced4da;
+   border-radius: 0.25rem;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+   align-items: center;
+   min-height: 120px;
+   width: 100%;
+   padding: 0.625rem;
+   resize: vertical;
+}
+
+.submit-button {
+   display: block;
+   width: 100%;
+   padding: 0.75rem;
+   background: var(--color-green);
+   color: inherit;
+   border-radius: 2px;
+   cursor: pointer;
+ }
